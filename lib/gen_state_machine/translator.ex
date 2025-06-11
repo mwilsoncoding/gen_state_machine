@@ -59,7 +59,7 @@ defmodule GenStateMachine.Translator do
 
     args =
       [keys, args]
-      |> List.zip()
+      |> Enum.zip()
       |> Map.new()
 
     msg = [
